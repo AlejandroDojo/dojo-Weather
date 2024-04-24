@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/index.js" defer></script>
 </head>
 <body>
     <header class="header">
         <div class="flex-container header-content">
             <h1>DojoWeather</h1>
             <nav class="header-items">
-                <a>Burbank</a>
+                <a onclick="muestraAlerta()">Burbank</a>
                 <a>Chicago</a>
                 <a>Dallas</a>
             </nav>
@@ -37,8 +38,8 @@
                 <img src="./assets/some_rain.png" alt="Rain day">
                 <p>some rain</p>
                 <ul>
-                    <li>24°</li>
-                    <li class="main-second">18°</li>
+                    <li><span class="calc">24</span>°</li>
+                    <li class="main-second"><span class="calc">18</span>°</li>
                 </ul>
             </div>
             <div class="main-content_tomorrow">
@@ -46,8 +47,8 @@
                 <img src="./assets/some_sun.png" alt="Sun day">
                 <p>some sun</p>
                 <ul>
-                    <li>27°</li>
-                    <li class="main-second">19°</li>
+                    <li><span class="calc">27</span>°</li>
+                    <li class="main-second"><span class="calc">19</span>°</li>
                 </ul>
             </div>
             <div class="main-content_friday">
@@ -55,8 +56,8 @@
                 <img src="./assets/some_clouds.png" alt="Clouds day">
                 <p>some clouds</p>
                 <ul>
-                    <li>21°</li>
-                    <li class="main-second">16°</li>
+                    <li><span class="calc">21</span>°</li>
+                    <li class="main-second"><span class="calc">16</span>°</li>
                 </ul>
             </div>
             <div class="main-content_saturday">
@@ -64,8 +65,8 @@
                 <img src="./assets/some_sun.png" alt="Sun day">
                 <p>some sun</p>
                 <ul>
-                    <li>26°</li>
-                    <li class="main-second">21°</li>
+                    <li><span class="calc">26</span>°</li>
+                    <li class="main-second"><span class="calc">21</span>°</li>
                 </ul>
             </div>
         </section>
@@ -75,7 +76,7 @@
                 <h3>Stop! Cookie time</h3>
                 <p>We use ookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse out traffic. <a href="">Read More...</a></p>
             </div>
-            <button>I Accept</button>
+            <button onclick="deleteCookie(this)">I Accept</button>
         </div>
     </main>
 </body>

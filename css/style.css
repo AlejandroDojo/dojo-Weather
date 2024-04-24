@@ -90,12 +90,13 @@ ul {
     color: rgb(43, 124, 255);
 }
 .cookies {
-    position: sticky;
+    position: fixed;
     border: 2px solid black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+    bottom: 500px;
 }
 .cookies button {
     background-color: rgb(118, 175, 250);
