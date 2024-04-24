@@ -1,6 +1,6 @@
 // Muestra un alerta
 function muestraAlerta() {
-    alert("You clicked somewhere");
+    alert("Cargando informe meteorológico");
 }
 // Elimina el contenedor de un elemento
 function deleteCookie(element) {
